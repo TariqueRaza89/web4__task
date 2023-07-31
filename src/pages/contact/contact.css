@@ -1,0 +1,126 @@
+.contact {
+  background: url(../../assets/bgcontacts.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 150px 0;
+  margin-top: 84px;
+}
+
+.contact__text {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color) !important;
+}
+.contact__content {
+  display: flex;
+  padding: 80px 0;
+}
+.contact__title {
+  font-size: 42px;
+}
+.contact__desc {
+  color: #5f5f5f;
+  line-height: 1.7;
+}
+
+.contact__content--left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 290px;
+}
+
+.contact__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact__icon {
+  background: #4b83fc1a;
+  border-radius: 50%;
+  padding: 15px;
+  color: var(--primary-color) !important;
+}
+.c__heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.conatct__para {
+  color: #5f5f5f;
+}
+.form__container {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  position: relative;
+  bottom: 290px;
+  padding: 60px;
+  border-radius: 5px;
+}
+
+.form__container h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.form__container input,
+textarea,
+button {
+  padding: 17px 22px;
+  font-size: 15px;
+  width: 96%;
+  margin-bottom: 10px;
+  outline: none;
+  border: 0.5px solid #adabab;
+  border-radius: 5px;
+}
+
+button {
+  width: max-content;
+  background: var(--primary-color);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  background: black;
+}
+
+@media screen and (max-width: 1068px) {
+  .contact__content--right {
+    width: 100%;
+  }
+  .contact__content--right img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .contact__content {
+    flex-direction: column;
+  }
+  .form__container {
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .contact__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  button {
+    font-size: 13px;
+  }
+  .form__container h3 {
+    font-size: 20px;
+  }
+}

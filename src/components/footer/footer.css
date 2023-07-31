@@ -1,0 +1,132 @@
+.footer {
+  background: #16171e;
+  color: #fff;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 120px 0;
+}
+
+.footer__logo--socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social__icon {
+  padding: 15px;
+  border-radius: 50%;
+  background: #25262f;
+  font-size: 12px;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  transition: all 0.6s ease;
+}
+
+.social__icon:hover {
+  background: var(--primary-color);
+}
+
+.footer__logo {
+  width: 140px;
+}
+.footer__text {
+  width: 278px;
+  color: #c0c1c2;
+}
+
+.visit__us--text {
+  color: #c0c1c2;
+  margin-bottom: 8px;
+}
+
+.email__field {
+  width: 277px;
+  border: 0.5px solid #c0c1c2;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.email__field input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #c0c1c2;
+  padding-left: 5px;
+}
+.s__icon {
+  background: #31333f;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.s__icon:hover {
+  background: var(--primary-color);
+}
+
+.location__contents,
+.phone__contents,
+.mail__contents {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.contact__icon {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+hr {
+  border-bottom: 0.5px solid #929399;
+}
+.copyright {
+  padding: 25px 0;
+  text-align: center;
+  color: #929399;
+  font-size: 15px;
+}
+
+.subs__text {
+  width: 277px;
+  margin-top: 25px;
+  color: #c0c1c2;
+}
+
+@media screen and (max-width: 1040px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+  .socials {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .copyright {
+    font-size: 14px;
+  }
+}

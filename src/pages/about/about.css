@@ -1,0 +1,141 @@
+.about {
+  background: url(../../assets/about.jpg);
+  color: white;
+  padding: 150px 0;
+  background-repeat: no-repeat;
+  margin-top: 84px;
+}
+.about__us--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about__us {
+  font-size: 42px;
+}
+.home__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.about__company {
+  padding: 80px 0;
+  display: flex;
+  gap: 60px;
+}
+
+.about__comapny--text {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color) !important;
+}
+
+.about__us--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__company--title {
+  font-size: 38px;
+}
+
+.about__company--desc {
+  color: #5f5f5f;
+}
+.about__co-founder {
+  display: flex;
+}
+.about__co-founder img {
+  width: 150px;
+  padding-right: 45px;
+}
+.founder__info {
+  border-left: 0.5px solid #5f5f5f;
+  padding: 0 45px;
+}
+.founder__name {
+  font-size: 20px;
+}
+.co_founder {
+  font-size: 14px;
+  color: #5f5f5f;
+  text-transform: uppercase;
+}
+
+.testimonial__container {
+  background: #f1f1f1;
+  padding: 80px 0;
+  text-align: center;
+}
+.testi__text {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color) !important;
+  margin: auto;
+  margin: 20px auto;
+}
+.testi__title {
+  font-size: 38px;
+}
+.testi__desc {
+  width: 662px;
+  color: #5f5f5f;
+  margin: 20px auto;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 1232px) {
+  .about__co-founder img {
+    width: 130px;
+  }
+  .founder__name {
+    font-size: 18px;
+  }
+  .co_founder {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1186px) {
+  .about__company {
+    flex-direction: column;
+  }
+  .about__us--left img {
+    width: 100%;
+  }
+  .about__co-founder {
+    margin-top: 20px;
+  }
+  .about__company--title {
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 730px) {
+  .testi__desc {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 456px) {
+  .about__us--content {
+    align-items: unset;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about__co-founder img {
+    width: 145px;
+    height: 45px;
+  }
+
+  .founder__name {
+    font-size: 13px;
+  }
+  .co_founder {
+    font-size: 10px;
+  }
+}

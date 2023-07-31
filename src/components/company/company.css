@@ -1,0 +1,32 @@
+.company__info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 80px;
+}
+.value {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.counter {
+  font-size: 56px;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 986px) {
+  .company__info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .counter {
+    font-size: 36px;
+  }
+  .company__text {
+    font-size: 12px;
+  }
+}

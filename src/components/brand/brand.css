@@ -1,0 +1,9 @@
+.company__brand {
+  background: #262832;
+  padding: 40px 0;
+}
+.brand__logo {
+  width: 128px;
+  height: 35px;
+  cursor: pointer;
+}
